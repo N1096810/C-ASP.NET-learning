@@ -1,0 +1,67 @@
+# Number Swap & Console.WriteLine(no1, no2)
+# string.IsNullOrEmpty(value) vs string.IsNullOrWhitespace(value)
+# Escape Characters
+
+## 1.Number Swap & Console.WriteLine(no1, no2)
+```
+//Number Swap & Console.WriteLine(no1, no2)
+int a = 10;
+int b = 3;
+int temp = a;
+a = b;
+b = temp;
+Console.WriteLine((a, b).ToString()); // (3, 10)
+```
+
+## 2.string.IsNullOrEmpty(value) vs string.IsNullOrWhitespace(value)
+```
+string value1 = "";
+string value2 = null;
+string value3 = "123";
+string value4 = "    ";
+
+bool result = string.IsNullOrEmpty(value1);
+Console.WriteLine(result);//True
+result = String.IsNullOrEmpty(value2);
+Console.WriteLine(result);//True
+result = String.IsNullOrEmpty(value3);
+Console.WriteLine(result);//False
+result = String.IsNullOrEmpty(value4);
+Console.WriteLine(result);//False
+result = String.IsNullOrWhiteSpace(value4);
+Console.WriteLine(result);//True
+```
+
+## 3.Escape Characters => \" \\ \t \r \a
+```
+//Escape Character => \"
+string test = "I am \"SuperMan\" ! ";
+Console.WriteLine(test);//I am "SuperMan" !
+
+//Escape Character => \\
+string path = "c:\\temp\\a.doc";
+Console.WriteLine(path); //c:\temp\a.doc
+
+//Escape Character => \t 水平方向tab
+string sentence = "I am \t superman";
+Console.WriteLine(sentence);//I am          superman
+
+//Escape Character => \r 回到最前方 \n 換行
+string listItems = "item1 \n\ritem2 \n\ritem3";
+Console.WriteLine(listItems);
+/*
+item1
+item2
+item3
+*/
+
+//Escape Character => \a 電腦發出bi聲音
+string testSound = "\a";
+Console.WriteLine(testSound);
+
+```
+
+## 4.123
+```
+123
+```
