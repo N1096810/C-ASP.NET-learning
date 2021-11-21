@@ -316,6 +316,50 @@ namespace ConsoleApp2
 ```
 只要副程式的功能愈單一, 您就愈有機會給它一個確切的名稱, 相反地, 如果副程式裡的功能很多, 命名就有困難, 或者會導致名稱需要很長才能描述清楚
 ```
+## TBD
+```C# =
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            //Program2 order = new Program2();
+            //int unitPrice = 1000, qty = 2;
+            //int subTotal = order.CalcSubTotal(unitPrice, qty);
+            Program2 order = new Program2 { UnitPrice = 500, Qty = 5 };
+            int subTotal = order.CalcSubTotal();
+            Console.WriteLine("小計是 " + subTotal);//小計是 2000
+            Console.WriteLine("小計是 " + Program2.CST2(75, 10));//小計是 750
+        }
+    }
+
+    class Program2
+    {
+        public int UnitPrice { get; set; }
+        public int Qty { get; set; }
+        public int CalcSubTotal()
+        {
+            int result = UnitPrice * Qty;
+            return result;
+        }
+
+        public static int CST2(int unitPrice, int qty)
+        {
+            int result2 = unitPrice * qty;
+            return result2;
+        }
+    }
+}
+```
+
 <hr>
 
 ## References
