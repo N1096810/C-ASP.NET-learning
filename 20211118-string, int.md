@@ -1,12 +1,14 @@
-# Number Swap & Console.WriteLine(no1, no2)
-# string.IsNullOrEmpty(value) vs string.IsNullOrWhitespace(value)
-# Escape Characters
-# trim
-# Substring
-# Contains(), ToLower(), ToUpper()
-# Length
-# StartsWith(String), EndsWith(String)
-# .IndexOf(), .LastIndexOf(), .IndexOfAny()
+## Keywords
+* Number Swap & Console.WriteLine(no1, no2)
+* string.IsNullOrEmpty(value) vs string.IsNullOrWhitespace(value)
+* Escape Characters
+* trim
+* Substring
+* Contains(), ToLower(), ToUpper()
+* Length
+* StartsWith(String), EndsWith(String)
+* .IndexOf(), .LastIndexOf(), .IndexOfAny()
+<hr>
 
 ## 1.Number Swap & Console.WriteLine(no1, no2)
 ```
