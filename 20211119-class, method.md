@@ -32,7 +32,7 @@ namespace ConsoleApp1
             //First way to create an object
             //Because class "order" has been created, so "order" now becomes a kind of "type" that can be called<br> to create a new object, similar to"int" or "string".
             Order order1 = new Order { ID = 001, Quantity = 10, UnitPrice = 5, OrderTime = DateTime.Today };
-            Console.WriteLine(order1.OrderTime);
+            Console.WriteLine(order1.OrderTime);//11/21/2021 12:00:00 AM
             int order1Price = AutoCount.GetSum(order1.Quantity, order1.UnitPrice);
             //Because "GetSum" was writtened within the class "AutoCount", so GetSum() should be called as above.
             Console.WriteLine(order1Price);//50
