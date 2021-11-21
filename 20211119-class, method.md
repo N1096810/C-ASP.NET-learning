@@ -315,3 +315,6 @@ namespace ConsoleApp2
 ```
 只要副程式的功能愈單一, 您就愈有機會給它一個確切的名稱, 相反地, 如果副程式裡的功能很多, 命名就有困難, 或者會導致名稱需要很長才能描述清楚
 ```
+
+## References
+[05 - CS03.04 類別、方法入門](https://www.evernote.com/shard/s530/client/snv?noteGuid=73f5da69-cb21-e8f4-bc57-4ca56aac82e5&noteKey=954235f55ede87aa146cf27c6b52baf5&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs530%2Fsh%2F73f5da69-cb21-e8f4-bc57-4ca56aac82e5%2F954235f55ede87aa146cf27c6b52baf5&title=05%2B-%2BCS03.04%2B%25E9%25A1%259E%25E5%2588%25A5%25E3%2580%2581%25E6%2596%25B9%25E6%25B3%2595%25E5%2585%25A5%25E9%2596%2580)
