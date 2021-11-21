@@ -4,7 +4,7 @@
 * member 
 <hr>
 
-## 1. TBD
+## 1. objective, class, member
 ```C# =
 using System;
 using System.Collections.Generic;
@@ -43,10 +43,13 @@ namespace ConsoleApp1
             order2.ID = 002;
             order2.Quantity = 5;
             order2.OrderTime = DateTime.Now;
-            order2.UnitPrice = 3;
+            order2.UnitPrice = 7;
             int order2Price = AutoCount.GetSum(order2.Quantity, order2.UnitPrice);
-            Console.WriteLine(order2Price);//15
-            Console.WriteLine(AutoCount.GetSum(order2.Quantity, order2.UnitPrice));//15
+            Console.WriteLine(order2Price);//35
+            Console.WriteLine(AutoCount.GetSum(order2.Quantity, order2.UnitPrice));//35
+
+            //static method 可以直接寫類別名稱之後就叫用
+            Console.WriteLine(AutoCount.GetSum(7, 8));
         }
     }
 
@@ -62,6 +65,8 @@ namespace ConsoleApp1
         public int ID { get; set; }//Property
         public int UnitPrice { get; set; }
     }
+
+
 
     public class AutoCount
     {
