@@ -28,56 +28,14 @@
 <hr>
 
 ## 3.app
-### 3.1.app-routing.module.ts
-```typescript=
-(type here)```
+### 3.1.TBD
+```C# =
+(type here)
+```
 ### 3.2.app.component.ts
-```typescript=
+```C# =
 (type here)
 ```
 
-### 3.3.app.module.ts
-```typescript=
-(type here)
-```
-
-### 3.4.app.component.html
-```typescript=
-(type here)
-```
-<hr>
-
-## 4.list.component
-### 4.1.list.component.ts
-```typescript=
-(type here)
-```
-### 4.2.list.component.html
-```typescript=
-(type here)
-```
-<hr>
-
-## 5.add.component
-### 5.1.add.component.ts
-```typescript=
-(type here)
-```
-### 5.2.add.component.html
-```typescript=
-(type here)
-```
-<hr>
-
-## 6.c.component
-### 6.1.c.component.ts
-```typescript=
-(type here)
-```
-### 6.2.c.component.html
-```typescript=
-(type here)
-```
-
-## 7.Reference
+## 4.Reference
 [Name](URL)
