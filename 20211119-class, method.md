@@ -251,9 +251,42 @@ namespace ConsoleApp2
         public void ResizeImage(string originalImagePath, int newWidth, int newHeight) { }
 ```
 
-## 6. Static
+## 6. Static method(靜態方法)
 ```C# =
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ImageHelper helper = new ImageHelper();
+            helper.DoA();
+
+            ImageHelper.DoB()
+        }
+    }
+
+    class ImageHelper
+    {
+        public void DoA()
+        { }
+
+        public static void DoB()
+        { }
+    }
+}
 ```
+```
+如果在宣告時 method(方法) 時加上 "static" , 表示它是 static method(靜態方法), 初學者經常分不清它有什麼差別, 有什麼作用, 何時要用或不用 static
+
+請參考以下程式以及叫用的方式
+* DoA() 不是 static , 所以必需先建立一個 ImageHelper 型別的物件, 再叫用它
+* DoB() 是 static 的, 叫用方式是直接寫類別名稱之後就叫用
+
+差別的確是有的, 不過會在很久以後, 教到物件導向時再一起說明, 目前只需要了解有沒有加 static 時, 差別會在叫用方式即可
+實務上, 大部份都是沒有 static , 少部份是 static , 二者差別有多少, 我沒有仔細統計, 也不可能有精確數值, 不過我個人的經驗裡, 比例差不多 50 : 1 吧, 大剖份不是static, 少部份是 static
+```
+
 
 ## 7. method - design patterns
 ### 功能要單一
