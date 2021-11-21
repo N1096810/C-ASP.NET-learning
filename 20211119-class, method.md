@@ -73,3 +73,38 @@ namespace ConsoleApp1
     };
 }
 ```
+
+## 2. method
+```c# =
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Order order = new Order();
+            int unitPrice = 1000, qty = 2;
+            int subTotal = order.CalcSubTotal(unitPrice, qty);
+            Console.WriteLine("小計是 " + subTotal);//小計是 2000
+        }
+    }
+
+    class Order
+    {
+        public int CalcSubTotal(int unitPrice, int qty)
+        {
+            int result = unitPrice * qty;
+            return result;
+        }
+    }
+}
+
+![C# method()](https://user-images.githubusercontent.com/72750077/142757995-d9da80b4-127a-47e6-a61b-eb485425b2cd.png)
+
+```
