@@ -1,31 +1,9 @@
 ## Keywords
 * class
 * method
-* Array
 <hr>
 
-## 1. Array
-```
-        static void Main(string[] args)
-        {
-            int currentMonth = 8;
-            int[] monthsWith31days = { 1,3,5,7,8,10,12};
-
-            if ( monthsWith31days.Contains(currentMonth) == true) {
-                Console.WriteLine("This month contains 31 days.");
-            }else {
-                Console.WriteLine("This month doesn't contain 31 days.");
-            };//This month contains 31 days.
-        }
-        
-        string[] weeks = new string[] { "星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六" };
-        Console.WriteLine(weeks.Length);//7
-        weeks[2] = "Tuesday";
-        weeks[5] = "Friday";
-        Console.WriteLine(weeks[2] +" and "+ weeks[5]);//Tuesday and Friday
-```
-
-## 2. Class & method
+## 1. Class & method
 ```
 using System;
 using System.Collections.Generic;
