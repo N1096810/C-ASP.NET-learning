@@ -105,7 +105,6 @@ namespace ConsoleApp2
     }
 }
 ```
-<hr>
 ```
 * 副程式(標準措詞是 method - 方法)必須放在類別裡面
 * public 表示外界可以叫用
