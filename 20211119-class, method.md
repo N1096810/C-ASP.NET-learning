@@ -177,3 +177,52 @@ namespace ConsoleApp2
 * 如果只有傳入 firstName時, result 最後會多一個空白, 所以在 return 時叫用了 Trim(), 將字串左右空白刪除(其實只要刪右側即可), 但其實使用者的* firstName也許不小心也打了空白, 所以就用了 Trim()
 * 先把method 宣告好, 再在 method 上打三條斜線, 就會自動寫好綠色的註解, 接著再填入註解即可
 ```
+
+## 4. method - return void
+```C# =
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ConsoleDrawer drawer = new ConsoleDrawer();
+            drawer.DrawLine(new string('*', 1));//*
+            drawer.DrawLine(new string('*', 2));//**
+            drawer.DrawLine(new string('*', 3));//***
+            drawer.DrawLine(new string('*', 4));//****
+            drawer.DrawLine(new string('*', 5));//*****
+        }
+    }
+
+    class ConsoleDrawer
+    {
+        public void DrawLine(string message)
+        {
+            if (string.IsNullOrEmpty(message) == true)
+            {
+                return; // 如果沒有傳入參數沒有值, 就不做任何動作
+            }
+
+            Console.WriteLine(message);
+        }
+    }
+
+}
+```
+```
+* 要供外界叫用, 所以寫了 public
+* 沒有要傳回資訊, 所以寫了 void
+* DrawLine 是 method(方法)的名稱
+* 緊接著是一對小括號
+* 小括號裡的 Parameter(參數), 這裡設計了一個參數, 是希望呈現出來的訊息
+* 小括號之後要接一對大括號, 這點與類別是相同的, 大括號裡面可以寫程式
+* 這支副程式沒有要傳回任何資訊, 所以沒有一定要寫return , 但範例裡有寫檢查, 如果傳入 message 參數是 null or 空字串, 就直接 return (直接結束, 接下去的程式碼就不會被執行), 程式執行到 method 最後一行會自動結束, 所以不必在最後一行還特別再寫一次 return
+* 撰寫副程式時, 通常都要在一開始先檢查傳入參數值是否合理, 如果不合理, 就提早結束; 這類檢查程式碼不可省, 也算是防呆, 用比較專業的術語, 稱為 * contract(合約, 約束), 必需先檢查是否符合 contract , 程式再繼續執行下去
+```
