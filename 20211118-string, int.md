@@ -11,7 +11,7 @@
 <hr>
 
 ## 1.Number Swap & Console.WriteLine(no1, no2)
-```
+```C# =
             //Number Swap & Console.WriteLine(no1, no2)
             int a = 10;
             int b = 3;
@@ -51,7 +51,7 @@
 ```
 
 ## 2.string.IsNullOrEmpty(value) vs string.IsNullOrWhitespace(value)
-```
+```C# =
             string value1 = "";
             string value2 = null;
             string value3 = "123";
@@ -70,7 +70,7 @@
 ```
 
 ## 3.Escape Characters => \" \\ \t \r \a @
-```
+```C# =
             //Escape Character => \"
             string test = "I am \"SuperMan\" ! ";
             Console.WriteLine(test);//I am "SuperMan" !
@@ -154,7 +154,7 @@ Order By desc";
 ```
 
 ## 4.trim
-```
+```C# =
             //trim
             //Delete spaces in front of/behind a sentence
             string sentence = "   This is a book.   ";
@@ -175,7 +175,7 @@ Order By desc";
 ```
 
 ## 5. Substring
-```
+```C# =
             //Substring(start position, capture length)
             string newContent = "[健康]你不可不知的十大健康好習慣";
             string newCapture = newContent.Substring(0, 4);
@@ -185,7 +185,7 @@ Order By desc";
 ```
 
 ## 6. Contains(), ToLower(), ToUpper()
-```
+```C# =
             //Must validate whether the values are "null" or not first before applying "ToLower() or ToUpper()"
             string account = "Barry";
             string pw = "barrypw123";
@@ -203,7 +203,7 @@ Order By desc";
 ```
 
 ## 7.Length
-```
+```C# =
     internal class Program
     {
         static void Main(string[] args)
@@ -233,7 +233,7 @@ Order By desc";
 ```
 
 ## 8. StartsWith(String), EndsWith(String)
-```
+```C# =
             //.StartsWith(String)
             //Determines whether the beginning of this string instance matches the specified string.
             string url = "http://www.bing.com/";
@@ -253,7 +253,7 @@ Order By desc";
 ```
 
 ## 9. .IndexOf(), .LastIndexOf(), .IndexOfAny()
-```
+```C# =
             //.IndexOf(), .LastIndexOf()
             /*
             Reports the zero-based index of the first occurrence of a specified Unicode character
@@ -306,9 +306,4 @@ Order By desc";
               Console.WriteLine("There is no any \"a\" or \"s\" in the string.");
             }//There is no any "a" or "s" in the string.
 
-```
-
-## 123.123
-```
-123
 ```
