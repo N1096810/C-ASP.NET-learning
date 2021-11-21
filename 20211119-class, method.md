@@ -117,3 +117,63 @@ namespace ConsoleApp2
 ```
 ![C# method()](https://user-images.githubusercontent.com/72750077/142757995-d9da80b4-127a-47e6-a61b-eb485425b2cd.png)
 
+## 3. method - return string
+```C# =
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Member member = new Member();
+            string fullName = member.GetFullName("Allen", "Kuo");
+            Console.WriteLine(fullName);// Allen Kuo
+            string name2 = member.GetFullName("Barry","");
+            Console.WriteLine(name2);// Barry
+
+        }
+    }
+
+    class Member
+    {
+        /// <summary>
+        /// 傳回會員全名,若兩個參數都有值,用空白區隔; 若只有一個參數有值,直接傳回; 如果都沒值,傳回空字串
+        /// </summary>
+        /// <param name="firstName">名</param>
+        /// <param name="lastName">姓</param>
+        /// <returns></returns>
+        public string GetFullName(string firstName, string lastName)
+        {
+            string result = string.Empty;
+            if (string.IsNullOrEmpty(firstName) == false)
+            {
+                result = result + firstName + " ";
+            }
+
+            if (string.IsNullOrEmpty(lastName) == false)
+            {
+                result = result + lastName;
+            }
+
+            return result.Trim();
+        }
+    }
+}
+```
+```
+* 要供外界叫用, 所以寫了 public
+* 要傳回字串型別, 所以寫了 string
+* GetFullName是method(方法, 初學時, 經常先稱它是副程式)的名稱
+* 緊接著是一對小括號
+* 小括號裡的 Parameter(參數), 這裡設計了二個參數, 分別是名(firstName), 姓(lastName)
+* 小括號之後要接一對大括號, 這點與類別是相同的, 大括號裡面可以寫程式
+* 這支副程式要傳回字串, 寫法是用了 return , 如果副程式沒有需要傳回值, 可以不寫 return
+* 如果只有傳入 firstName時, result 最後會多一個空白, 所以在 return 時叫用了 Trim(), 將字串左右空白刪除(其實只要刪右側即可), 但其實使用者的* firstName也許不小心也打了空白, 所以就用了 Trim()
+* 先把method 宣告好, 再在 method 上打三條斜線, 就會自動寫好綠色的註解, 接著再填入註解即可
+```
