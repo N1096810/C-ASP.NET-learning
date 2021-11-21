@@ -74,7 +74,7 @@ namespace ConsoleApp1
 }
 ```
 
-## 2. method
+## 2. method - return int
 ```c# =
 using System;
 using System.Collections.Generic;
