@@ -258,6 +258,7 @@ namespace ConsoleApp2
 ```
 
 ## 6. Static method(靜態方法)
+### Example 1
 ```C# =
 namespace ConsoleApp2
 {
@@ -293,6 +294,45 @@ namespace ConsoleApp2
 實務上, 大部份都是沒有 static , 少部份是 static , 二者差別有多少, 我沒有仔細統計, 也不可能有精確數值, 不過我個人的經驗裡, 比例差不多 50 : 1 吧, 大剖份不是static, 少部份是 static
 ```
 
+### Example2
+```C# =
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program2
+    {
+        static void Main(string[] args)
+        {
+            NewOrder2 order3 = new NewOrder2 { UnitPrice = 520, Qty = 5 };
+            int subTotal = order3.CalcSubTotal();
+            Console.WriteLine("小計是 " + subTotal);//小計是 2600
+            Console.WriteLine("小計是 " + NewOrder2.CST2(85, 10));//小計是 850
+        }
+    }
+
+    class NewOrder2
+    {
+        public int UnitPrice { get; set; }
+        public int Qty { get; set; }
+        public int CalcSubTotal()//因為已經有先宣告property，所以不需要input
+        {
+            int result = UnitPrice * Qty;
+            return result;
+        }
+
+        public static int CST2(int unitPrice, int qty)//static method可直接被class呼叫
+        {
+            int result2 = unitPrice * qty;
+            return result2;
+        }
+    }
+}
+```
 
 ## 7. method - design patterns
 ### 功能要單一
