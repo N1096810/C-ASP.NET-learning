@@ -1,7 +1,8 @@
 ## Keywords
 * class
 * objective
-* member 
+* member
+* static 
 <hr>
 
 ## 1. objective, class, member
