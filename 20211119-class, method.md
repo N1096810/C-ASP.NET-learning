@@ -226,3 +226,27 @@ namespace ConsoleApp2
 * 這支副程式沒有要傳回任何資訊, 所以沒有一定要寫return , 但範例裡有寫檢查, 如果傳入 message 參數是 null or 空字串, 就直接 return (直接結束, 接下去的程式碼就不會被執行), 程式執行到 method 最後一行會自動結束, 所以不必在最後一行還特別再寫一次 return
 * 撰寫副程式時, 通常都要在一開始先檢查傳入參數值是否合理, 如果不合理, 就提早結束; 這類檢查程式碼不可省, 也算是防呆, 用比較專業的術語, 稱為 * contract(合約, 約束), 必需先檢查是否符合 contract , 程式再繼續執行下去
 ```
+
+## 5. set put parameters
+```C# =
+        /// <summary>
+        /// 刪除某一個檔案
+        /// </summary>
+        /// <param name="path">要刪除檔案的完整路徑</param>
+        public void DeleteFile(string path) { }
+
+        /// <summary>
+        /// 計算5%螢業稅, 若有小數點, 四捨五入
+        /// </summary>
+        /// <param name="price">未稅金額</param>
+        /// <returns></returns>
+        public int CalcTax(int price) { }
+
+        /// <summary>
+        /// 將圖片按比例縮小到指定尺寸
+        /// </summary>
+        /// <param name="originalImagePath">原始圖片的完整路徑</param>
+        /// <param name="newWidth">縮圖之後的圖寬最大允許值</param>
+        /// <param name="newHeight">縮圖之後的圖高最大允許值</param>
+        public void ResizeImage(string originalImagePath, int newWidth, int newHeight) { }
+```
