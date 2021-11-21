@@ -113,7 +113,6 @@ namespace ConsoleApp2
 * 小括號裡的稱為 Parameter(參數), 副程式的參數可以是零個, 一個,或多個參數, 建議最多不要超過三個參數, 比較不會造成叫用時的困擾
 * 小括號之後要接一對大括號, 這點與類別是相同的, 大括號裡面可以寫程式
 * 這支副程式要傳回整數, 寫法是用了 return , 如果副程式沒有需要傳回值, 可以不寫 return
-
+```
 ![C# method()](https://user-images.githubusercontent.com/72750077/142757995-d9da80b4-127a-47e6-a61b-eb485425b2cd.png)
 
-```
