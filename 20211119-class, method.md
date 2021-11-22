@@ -400,6 +400,82 @@ namespace ConsoleApp1
 }
 ```
 
+## TBD-2
+```C# =
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Order order1 = new Order();
+            order1.Price = 100;
+            int subtotal = order1.CalPrice();//.CalPrice() is established within class "Order"
+            Console.WriteLine(subtotal);//150
+
+            order1.Price = 180;
+            subtotal = order1.CalPrice();
+            Console.WriteLine(subtotal);//180
+
+            //Static method for this example
+            //If I would like to call a method() from different class without using "static", I should use "delegate" instead.
+            Order order2 = new Order();
+            order2.Price = 180;
+            order2.quantity = 10;
+
+            //If I would like to print all contents of an objective, go searching "override the ToString method".
+            Console.WriteLine(Discount.SpecialDiscount(order2));//1300
+
+        }
+    }
+
+
+
+    public class Order
+    {
+        public int quantity { get; set; }
+        public int Price { get; set; }
+
+
+        public int CalPrice()
+        {
+            if (Price <= 100)
+            {
+                int result1 = Price + 50;
+                return result1;
+            }
+            else
+            {
+                return Price;
+            }
+        }
+    }
+    public class Discount
+    {
+       public static int SpecialDiscount(Order order2) // if my input is a "class", then I can input all its properties at a time.
+        {
+            if ( order2.Price >= 100)
+            {
+                int discountAmount = (order2.Price -50) * order2.quantity;
+                return discountAmount;
+            }
+            else
+            {
+                return order2.Price * order2.quantity;
+            }
+        }
+    }
+
+
+}
+```
+
 <hr>
 
 ## References
