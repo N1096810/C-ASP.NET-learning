@@ -40,29 +40,96 @@ namespace ConsoleApp2
 
 ```
 
-## 2.Create the Environment
-### 2.1.Create new project(with routing)
-`ng new ngdemo`
-`routing? > Yes`
-`Check >　 app > app-routing.module.ts`
-
-### 2.2.Create (type here)
-`(type here)`
-<br>
-`(type here)`
-<br>
-`(type here)`
-<hr>
-
-## 3.app
-### 3.1.TBD
+## 2.if_else
 ```C# =
-(type here)
-```
-### 3.2.app.component.ts
-```C# =
-(type here)
-```
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-## 4.Reference
-[Name](URL)
+namespace ConsoleApp2
+{
+    /// <summary>
+    /// 使用物件/副程式來寫判斷式，更簡潔好懂且好修改
+    /// 3歲以下不收錢
+    /// 60歲以上女性收3元
+    /// 70歲以上男性收5元
+    /// 其餘收15元
+    /// </summary>
+    internal class Program
+    {
+      
+        static void Main(string[] args)
+        {
+            Customer customer = new Customer();
+            customer.Gender = true;
+            customer.Age = 70;
+
+            int result;
+            
+            if (customer.IsOldMan() == true)
+            {
+                result = 5;
+            }
+            else if (customer.IsOldWoman() == true)
+            {
+                result = 3;
+            }
+            else if (customer.IsChild() == true)
+            {
+                result = 0;
+            }
+            else
+            {
+                result = 15;
+            }
+            Console.WriteLine(result);//5
+        }
+    }
+
+    public class Customer
+    {
+        public bool Gender { get; set; }
+        public int Age { get; set; }
+
+
+        public bool IsOldMan()
+        {
+            if ((Gender == true) && (Age >= 70))
+            {
+                return true;
+            }
+            else 
+            { 
+                return false; 
+            }
+        }
+
+        public bool IsOldWoman()
+        {
+            if ((Gender == false) && (Age >= 60))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool IsChild()
+        {
+            if (Age <= 3)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
+}
+
+```
