@@ -8,6 +8,7 @@
 * Length
 * StartsWith(String), EndsWith(String)
 * .IndexOf(), .LastIndexOf(), .IndexOfAny()
+* String interpolation(字串插值)
 <hr>
 
 ## 1.Number Swap & Console.WriteLine(no1, no2)
@@ -306,4 +307,40 @@ Order By desc";
               Console.WriteLine("There is no any \"a\" or \"s\" in the string.");
             }//There is no any "a" or "s" in the string.
 
+```
+
+## 10. String interpolation(字串插值)
+```C# =
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int firstNumber1 = 2; firstNumber1 <= 9; firstNumber1++)
+            {
+                /// Because method "SingleList" and " method "Main" are within in the same class "Program".
+                /// So "SingleList" can be called directly.
+                SingleList(firstNumber1);
+                Console.WriteLine();
+            }
+        }
+
+        static void SingleList(int firstNumber2)
+        {
+            for (int secondNumber = 1; secondNumber <= 9; secondNumber++)
+            {
+                //format 1
+                string message = firstNumber2 + "*" + secondNumber + "=" + (firstNumber2 * secondNumber);
+                Console.WriteLine(message);
+
+                //format 2
+                string template = "{0} 乘以 {1}, 答案是 {2}";
+                string message2 = string.Format(template, firstNumber2, secondNumber, firstNumber2 * secondNumber);
+                Console.WriteLine(message2);
+
+                //format3 => String interpolation
+                string message3 = $"{firstNumber2*secondNumber} = {firstNumber2} * {secondNumber}";
+                Console.WriteLine(message3);
+            };
+        }
+    }
 ```
