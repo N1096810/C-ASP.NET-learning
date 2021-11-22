@@ -185,3 +185,10 @@ namespace ConsoleApp2
 }
 
 ```
+
+## 4. if_else 判斷順序
+``` C# =
+if() 條件式由左判斷到右
+if (result1.Length > 5 && result1 != null)//若result1 = null, 則程式會出現錯誤
+if (result1 != null && result1.Length > 5)//若result1 = null, 則if判斷式不成立
+```
