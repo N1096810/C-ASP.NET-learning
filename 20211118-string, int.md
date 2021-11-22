@@ -344,3 +344,35 @@ Order By desc";
         }
     }
 ```
+
+## 11. Isosceles Triangle
+```C# =
+    /// <summary>
+    /// Isosceles triangle
+    /// </summary>
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int length2 = 4;
+            for (int i2 = 0; i2 < length2 + 1; i2++)
+            {
+                string left = DisplayLineLeft(length2, i2);
+                string right = DisplayLineRight(length2, i2);
+                Console.WriteLine(left+'*'+right);
+            }
+        }
+
+        static string DisplayLineLeft(int length2, int count)
+        {
+            string message = new string(' ', length2 - count) + new string('*', count);
+            return message;
+        }
+
+        static string DisplayLineRight(int length2, int count)
+        {
+            string message = new string('*', count) + new string(' ', length2 - count);
+            return message;
+        }
+    }
+```
