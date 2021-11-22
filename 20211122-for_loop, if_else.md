@@ -40,7 +40,59 @@ namespace ConsoleApp2
 
 ```
 
-## 2.if_else
+## 2. if_else - 1
+```C# =
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    /// <summary>
+    /// 使用物件/副程式來寫判斷式，更簡潔好懂且好修改
+    /// </summary>
+    internal class Program
+    {
+      
+        static void Main(string[] args)
+        {
+            int a = 4, b = 5, c = 6, d = 0;
+            Member member = new Member();
+            member.A = a;
+            member.B = b;  
+            member.C = c;
+            member.D = d;
+
+            if(member.IsValid())// = if(member.IsValid() == true)
+            {
+                Console.WriteLine("Situation 1");
+            }
+            else
+            {
+                Console.WriteLine("Situation 2");
+            }
+        }
+    }
+
+    public class Member
+    {
+        public int A { get; set; }
+        public int B { get; set; }
+        public int C { get; set; }
+        public int D { get; set; }
+
+        public bool IsValid()
+        {
+            return A > 0 && B > 0 && C >0 && D > 0;
+        }
+    }
+}
+
+```
+
+## 3. if_else - 2
 ```C# =
 using System;
 using System.Collections.Generic;
