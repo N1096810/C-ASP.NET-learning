@@ -337,7 +337,7 @@ Order By desc";
                 string message2 = string.Format(template, firstNumber2, secondNumber, firstNumber2 * secondNumber);
                 Console.WriteLine(message2);
 
-                //format3 => String interpolation
+                //format 3 => String interpolation
                 string message3 = $"{firstNumber2*secondNumber} = {firstNumber2} * {secondNumber}";
                 Console.WriteLine(message3);
             };
