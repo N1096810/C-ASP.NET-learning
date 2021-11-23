@@ -1,3 +1,10 @@
+## Keywords
+* throw new Exception()
+* try-catch
+<hr>
+
+## 1. throw new Exception() / try-catch
+```C# =
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,3 +41,8 @@ namespace ConsoleApp1
         }
     }
 }
+```
+<hr>
+
+## Reference
+[try-catch (C# Reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch)
