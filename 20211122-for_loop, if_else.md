@@ -227,4 +227,30 @@ namespace ConsoleApp4
 
 ## 6. while
 ```C# =
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int sum = 10;
+            int startValue = 0;
+            int currentValue = 1;
+            
+            while(sum > (startValue + currentValue) )//If you don't know how many times that will be needed for running the loop, use "while".
+            {
+                currentValue++;
+                startValue += currentValue;
+                Console.WriteLine(startValue);
+            }
+        }
+    }
+}
+
 ```
