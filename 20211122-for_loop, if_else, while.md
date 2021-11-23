@@ -252,5 +252,40 @@ namespace ConsoleApp1
         }
     }
 }
+```
+
+## 7. While - Factors of 300
+```C# =
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp4
+{
+    /// <summary>
+    /// Factors of 300
+    /// </summary>
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int number = 300;
+            int value = 0;
+
+            while (value <= 300)
+            {
+                value = value + 1;
+
+                if (300 % value == 0)
+                {
+                    Console.WriteLine(value);
+                }
+            }
+
+        }
+    }
+}
 
 ```
