@@ -50,6 +50,52 @@ namespace ConsoleApp1
 
 ## 2. int.TryParse
 ```C# =
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    internal class Program
+    {
+        /// <summary>
+        /// string to int => int.TryParse(no exception returned) / Convert.Int32(will have exception returned)
+        /// </summary>
+        static void Main(string[] args)
+        {
+
+            string value = "12sfdsdf3";
+            Console.WriteLine(int.TryParse(value, out int number));//false
+            bool isInt = int.TryParse(value, out number);
+            if (isInt)
+            {
+                Console.WriteLine(number + 2);
+            }
+            else
+            {
+                Console.WriteLine("Input value can't be converted into integer.");//This one
+            }
+
+            string value2 = "10";
+            Console.WriteLine(int.TryParse(value2, out int number2));//true
+            bool isInt2 = int.TryParse(value2, out number2);
+
+            if (isInt2)
+            {
+                Console.WriteLine(number2 + 2);//12
+            }
+            else
+            {
+                Console.WriteLine("Input value can't be converted into integer.");
+            }
+
+
+        }
+    }
+}
+
 ```
 <hr>
 
