@@ -5,6 +5,7 @@
 * double
 * float
 * demimal
+* Round
 <hr>
 
 ## 1. throw new Exception() / try-catch
@@ -108,6 +109,50 @@ namespace ConsoleApp2
 }
 
 ```
+
+## 3. Round / Math.Round(_______, MidpointRounding.AwayFromZero);
+```C# =
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    internal class Round
+    {
+        /// <summary>
+        /// Round
+        /// </summary>
+        /// <param name="args"></param>
+        static void Main(string[] args)
+        {
+            int tax = OrderService.PayTax(100);//5
+            Console.WriteLine(tax);
+
+            tax = OrderService.PayTax(119);//5.95 => 6
+            Console.WriteLine(tax);
+
+            tax = OrderService.PayTax(210);//10.5 => 11
+            Console.WriteLine(tax);
+        }
+    }
+
+    class OrderService
+    {
+        public static int PayTax(int price)
+        {
+            //The default parameter of "Math.Round" is "MidpointRounding.ToEven"(四捨六入五成雙)
+            double tax = Math.Round(price * 0.05, MidpointRounding.AwayFromZero);
+            return (int)tax;//(type) => force the varible to convert its type.
+
+        }
+    }
+}
+
+```
+
 <hr>
 
 ## Reference
