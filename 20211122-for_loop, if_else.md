@@ -1,8 +1,9 @@
 ## Keywords
 * for_loop
-* switch
+* foreach_loop
 * if_else
 * Ternary conditional operator (三元運算子)
+* while
 <hr>
 
 ## 1.for_loop
@@ -222,4 +223,8 @@ namespace ConsoleApp4
         }
     }
 }
+```
+
+## 6. while
+```C# =
 ```
