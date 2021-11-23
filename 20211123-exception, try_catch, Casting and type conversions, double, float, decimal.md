@@ -1,6 +1,11 @@
 ## Keywords
 * throw new Exception()
+* throw new ArgumentOutOfRangeException()
 * try-catch
+* Casting and type conversions
+* double
+* float
+* demimal
 <hr>
 
 ## 1. throw new Exception() / try-catch
@@ -42,7 +47,12 @@ namespace ConsoleApp1
     }
 }
 ```
+
+## 2. int.TryParse
+```C# =
+```
 <hr>
 
 ## Reference
 [try-catch (C# Reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch)
+[Casting and type conversions (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
