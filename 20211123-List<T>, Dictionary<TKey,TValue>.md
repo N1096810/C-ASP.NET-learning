@@ -97,7 +97,7 @@ namespace ConsoleApp4
 }
 ```
 
-## 2. Dictionary<TKey,TValue>
+## 3. Dictionary<TKey,TValue>
 ```C# =
 using System;
 using System.Collections.Generic;
@@ -158,7 +158,62 @@ namespace ConsoleApp1
 }
 
 ```
+## 4. Array[] to Dictionary<>
+```C# =
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace CountItems
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] items = new string[] { "A", "C", "B", "A", "Z", "A", "C" };
+            Dictionary<int, string> myDictionary = new Dictionary<int, string>();
+            for (int i = 0; i < items.Length; i++)
+            { myDictionary.Add(i, items[i]); }
+
+            Count2 countA = new Count2(myDictionary, "A");
+            Console.WriteLine(countA.CountTimes());//3
+            Count2 countB = new Count2(myDictionary, "B");
+            Console.WriteLine(countB.CountTimes());//1
+            Count2 countC = new Count2(myDictionary, "C");
+            Console.WriteLine(countC.CountTimes());//2
+            Count2 countZ = new Count2(myDictionary, "Z");
+            Console.WriteLine(countZ.CountTimes());//1
+        }
+    }
+    class Count2
+    {
+        public Count2(Dictionary<int, string> itemList, string item)
+        {
+            this.ItemList = itemList;
+            this.Item = item;
+        }
+        public Dictionary<int, string> ItemList { get; set; }
+        public string Item { get; set; }
+
+        public int CountTimes()
+        {
+            int subTotal = 0;
+            for (int i = 0; i < ItemList.Count+1; i++)
+            {
+                if (ItemList.ContainsValue(Item) == true)
+                {
+                    subTotal = ItemList.Count(kv => kv.Value.Contains(Item));// 我看不懂甚麼是KV......QQ
+                }
+                else{subTotal = subTotal;}
+            }
+            return subTotal;
+        }
+    }
+}
+```
+    
 <hr>
 
 ## References
