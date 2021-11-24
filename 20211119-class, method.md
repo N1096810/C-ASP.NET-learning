@@ -3,6 +3,7 @@
 * objective
 * member
 * static 
+* Constructor
 <hr>
 
 ## 1. objective, class, member
@@ -356,6 +357,10 @@ namespace ConsoleApp1
 ```
 只要副程式的功能愈單一, 您就愈有機會給它一個確切的名稱, 相反地, 如果副程式裡的功能很多, 命名就有困難, 或者會導致名稱需要很長才能描述清楚
 ```
+## 8. Constructor
+```C# =
+```
+
 ## TBD
 ```C# =
 using System;
