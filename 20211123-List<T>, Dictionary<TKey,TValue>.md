@@ -1,6 +1,7 @@
 ## Keywords
 * List<T>
-<hr> 
+* Dictionary<TKey,TValue>
+<hr>
 
 ## 1. List of interger
 ```C# =
@@ -94,5 +95,8 @@ namespace ConsoleApp4
         public int Qty { get; set; }
     }
 }
+```
 
+## 2. Dictionary<TKey,TValue>
+```C# =
 ```
