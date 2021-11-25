@@ -388,8 +388,7 @@ using System.Threading.Tasks;
 
 namespace NTUB.ConsoleApp1
 {
-    ///Extension Method
-    ///
+    ///StringBuilder is utilized to produce new string sequence efficiently 
     internal class Program
     {
         static void Main(string[] args)
