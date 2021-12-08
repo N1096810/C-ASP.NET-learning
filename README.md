@@ -41,4 +41,4 @@
 
 ## 4.Reference
 [Name](URL)<br/>
-[國立臺北商業大學](https://https://www.ntub.edu.tw/)<br/>
+[國立臺北商業大學](https://www.ntub.edu.tw/)<br/>
