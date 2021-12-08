@@ -1,0 +1,78 @@
+2021/12/09 更新
+
+09.20 10.09.01 擴充方法(Extenstion Methods)
+https://www.evernote.com/shard/s530/sh/30d4d64a-b977-c86f-0cce-1397301aae52/48b966bf53f21b8002f1dec939380da3
+
+09.30 10.09.01.10 擴充方法範例-尋找基準日期之後(含)的第一個星期日
+https://www.evernote.com/shard/s530/sh/c4941764-a9d0-3dc8-2287-f0ed81fff1f2/d91dd6af56aa675ee2ef3583ddb8ac5e
+
+09.10 Cart sample code
+https://www.evernote.com/shard/s530/sh/79b13a10-f496-48e5-36a2-b95c51aa37f9/cf225b8c583fe245be7e98c74485cca5
+
+10.10 虛擬方法, 抽象類別
+https://www.evernote.com/shard/s530/sh/1bd4db08-9cab-7760-c831-3d835ee9e424/7a6f169a1629805abafa74a1f243a496
+
+10.20 10.01.03.04 物件導向的特性之一 - 繼承
+https://www.evernote.com/shard/s530/sh/1ccca502-177e-6a44-99b6-a0e5739854a6/d76be6626a8ae407669c0d4f5e8bef23
+
+Dapper三層式架構
+https://hackmd.io/@brucechen1206/HJGI1PLtK
+
+git
+https://gitbook.tw/chapters/introduction/about-this-book.html
+
+2021/11/30 3層架構範例程式
+https://www.evernote.com/shard/s530/sh/b60e7a59-d636-fad8-a8ad-3b1582f4d4d1/749d0ca101b04ef053145ebf2a518a55
+
+存取單一資料表範例
+https://www.ever
+
+08.10 10.01.03.01 建構子(constructor)
+https://www.evernote.com/shard/s530/sh/2d62616b-4954-307f-960f-1e50df6f842e/556bf616b2e9e94bec4a059ada37e429
+
+08.20 10.01.03.02 類別範例 - Size
+https://www.evernote.com/shard/s530/sh/d5543c10-a23b-e320-02bb-950a96193ec8/2578bee972f5398386e716277e89b6ae
+
+08.30 10.01.03.03 建構子多載
+https://www.evernote.com/shard/s530/sh/f44afd5e-4a51-e48e-999c-f7cba5d71bf7/127c0b67842eee98055a96d5e330cdef
+
+08.40 10.01.03.04 物件導向的特性之一 - 繼承
+https://www.evernote.com/shard/s530/sh/fdaaf222-bc2e-15f1-919d-5f23802380d1/c9e7168527eeaf78d93c60488315aaf6
+
+Member的五種寫法
+
+08.01 member v1
+https://www.evernote.com/shard/s530/sh/0a1a4cba-a04b-e336-9ab0-50f74897f0d9/1661f80dc10f0b177295e3693db154e0
+
+08.02 member v2
+https://www.evernote.com/shard/s530/sh/62ccf90c-e45b-90e9-096c-bea50643e88f/b4c1ceec1beff7b02b7846a7f5c9a786
+
+08.03 member v3
+https://www.evernote.com/shard/s530/sh/00b896e4-9b6b-5220-32a0-f0b09d77fbfe/53e1348ef9b24003fbe77c48175129d2
+
+08.04 member v4
+https://www.evernote.com/shard/s530/sh/e9ec97a1-0c21-cd25-1e2f-f52e247dc644/08b26384a3f6b63a2a7aa32306f26cd0
+
+08.05 member v5
+https://www.evernote.com/shard/s530/sh/891d7f65-72a9-7b9a-cb66-c6a30ed847e9/74f85e6b67ca9c8b214f450af7cac14e
+
+05 - CS03.04 類別、方法入門
+https://www.evernote.com/shard/s530/sh/73f5da69-cb21-e8f4-bc57-4ca56aac82e5/954235f55ede87aa146cf27c6b52baf5
+
+06.10 04.01.01 if-else
+https://www.evernote.com/shard/s530/sh/dbef8dd1-b0e8-5ddc-90a4-d864dec4ef76/c270405cdfcd501f436f81644b3bd75d
+
+06.20 04.01.02 switch - case
+https://www.evernote.com/shard/s530/sh/1be6016c-b438-fa5c-54cb-337db3d24199/0ce2ea6760f26d98bd7de3293232d97e
+
+06.30 04.01.03 三元條件運算子
+https://www.evernote.com/shard/s530/sh/a4a82fc7-9006-c24c-21d3-bf35cc550ad3/e8e00603254a40aee5a087aa09935cd5
+
+06.40 04.02.04 字串格式化
+https://www.evernote.com/shard/s530/sh/b979cba7-6599-efda-68f6-21d75232d777/62313908976fb25a593af07dd76a9559
+
+07.20 05 例外處理(Exception Handling)
+https://www.evernote.com/shard/s530/sh/1e3d26fd-897b-67cd-4b47-6e77ea89c489/0d6087092f9b4378046272fceec3c98e
+
+07.30 09.02 List<T>, 何謂泛型
+https://www.evernote.com/shard/s530/sh/43407e59-53cb-4945-8313-82981b14296d/895046b70fb4296d364dcfe737e1562a
